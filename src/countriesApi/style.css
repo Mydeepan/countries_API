@@ -120,12 +120,15 @@ img {
     color: #666;
     text-transform: capitalize;
 }
+.text-container{
+    margin-left: 20px;
+}
 .text-container div{
     display: flex;
     align-items: baseline;
     gap: 10px;
-    margin: 5px 0;
-    padding: 3px 0;
+    margin: 5px 0px;
+    padding: 3px;
 }
 .text-container .subregion{
     display: flex;

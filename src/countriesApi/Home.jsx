@@ -5,9 +5,9 @@ import React, { useEffect, useState } from 'react'
 
 
 export const Home = () => {
-    const [countryName,setCountryName] = useState('AUS')
-    const [userInput,setUserInput] = useState('AUS')
-    const API_COUNTRY = `https://restcountries.com/v3.1/name/${userInput}`
+    const [countryName,setCountryName] = useState('India')
+    const [userInput,setUserInput] = useState('India')
+    const API_COUNTRY=`https://restcountries.com/v3.1/name/${userInput}`
     const [countryCap,setcountryCap] = useState('');
     const [region,setRegion] = useState('');
     const [currentName,setCurrentName] = useState('');
@@ -26,7 +26,7 @@ export const Home = () => {
             try {
                 setLoading(true)
                 const res =await axios.get(API_COUNTRY)
-                const data = res.data[1];
+                const data = res.data[0];
                 setCurrentName(data.name.common ?data.name.common:  data.altSpellings[1] );
                 setcountryCap(data.capital);
                 setRegion(data.region);
