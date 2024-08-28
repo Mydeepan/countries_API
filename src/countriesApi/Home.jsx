@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 export const Home = () => {
     const [countryName,setCountryName] = useState('India')
-    const [userInput,setUserInput] = useState('india')
+    const [userInput,setUserInput] = useState('AUS')
     const API_COUNTRY = `https://restcountries.com/v3.1/name/${userInput}`
     const [countryCap,setcountryCap] = useState('');
     const [region,setRegion] = useState('');
